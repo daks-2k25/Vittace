@@ -230,7 +230,7 @@ export const finalCta: CtaSectionContent = {
   eyebrow: "Vamos conversar?",
   title: "Agende sua avaliação e descubra o melhor tratamento para você.",
   description:
-    "Fale agora com nossa equipe pelo WhatsApp e receba orientação personalizada, sem compromisso.",
+    "Fale agora com nossa equipe pelo WhatsApp e receba orientação personalizada.",
   ctaLabel: "Chamar no WhatsApp",
   image: "/images/clinica/consultorio.png",
 };

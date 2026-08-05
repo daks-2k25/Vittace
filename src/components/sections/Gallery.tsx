@@ -11,7 +11,6 @@ export function Gallery() {
     <section id="resultados" className="bg-vittace-cream py-24 md:py-32">
       <Container className="flex flex-col gap-16">
         <SectionHeading
-          eyebrow="Resultados"
           title="Nossa equipe, nosso espaço"
           description="Conheça as profissionais responsáveis pelo seu atendimento e o ambiente real da Vittace."
         />
