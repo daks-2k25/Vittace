@@ -62,6 +62,8 @@ export function Footer() {
               <a
                 key={social.label}
                 href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label={social.label}
                 className="flex h-9 w-9 items-center justify-center rounded-full border border-vittace-sand/25 text-vittace-cream/85 transition-colors hover:border-vittace-accent hover:text-vittace-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-vittace-accent focus-visible:ring-offset-2 focus-visible:ring-offset-vittace-brown-dark"
               >

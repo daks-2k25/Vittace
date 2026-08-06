@@ -41,7 +41,8 @@ export const siteConfig = {
   ] satisfies BusinessHours[],
 
   social: [
-    { label: "Instagram", href: "#", icon: "instagram" },
+    // TODO: confirmar link oficial do Facebook
+    { label: "Instagram", href: "https://www.instagram.com/clinicavittace/", icon: "instagram" },
     { label: "Facebook", href: "#", icon: "facebook" },
   ] satisfies SocialLink[],
 } as const;
