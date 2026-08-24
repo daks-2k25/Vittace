@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { services } from "@/lib/site-config";
+import { sectionHeadings, services } from "@/lib/site-config";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { DynamicIcon } from "@/components/ui/icon-map";
@@ -12,9 +12,9 @@ export function Services() {
     <section id="tratamentos" className="bg-vittace-sand/40 py-24 md:py-32">
       <Container className="flex flex-col gap-16">
         <SectionHeading
-          eyebrow="Tratamentos"
-          title="Ciência, estética e naturalidade em cada plano"
-          description="Tratamentos personalizados que unem cuidado odontológico e medicina estética — dos ajustes pontuais aos planos mais completos."
+          eyebrow={sectionHeadings.services.eyebrow}
+          title={sectionHeadings.services.title}
+          description={sectionHeadings.services.description}
         />
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">

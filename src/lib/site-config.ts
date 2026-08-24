@@ -20,7 +20,7 @@ export const siteConfig = {
   name: "Vittace",
   tagline: "Odontologia e Medicina Estética",
   description:
-    "Odontologia e medicina estética reunidas em um só endereço, com planejamento personalizado para cada rosto e cada sorriso.",
+    "Odontologia e medicina estética em um só endereço, com atendimento próximo do início ao fim.",
 
   // TODO: confirmar telefone oficial
   phone: "+55 (41) 99266-6010",
@@ -60,9 +60,9 @@ export const navLinks: NavLink[] = [
 
 export const hero: HeroContent = {
   eyebrow: "Vittace — Odontologia e Medicina Estética",
-  headline: "Seu sorriso. Sua beleza. Sua melhor versão.",
+  headline: "Seu sorriso e sua beleza, na melhor versão de você.",
   subheadline:
-    "Odontologia e medicina estética reunidas em um só endereço, com planejamento personalizado para cada rosto e cada sorriso.",
+    "Odontologia e medicina estética reunidas em um só endereço, com um plano pensado para cada rosto e cada sorriso.",
   ctaLabel: "Agendar pelo WhatsApp",
   microcopy: "Resposta rápida, sem compromisso.",
   image: "/images/hero/fachada-vittace.png",
@@ -72,18 +72,18 @@ export const hero: HeroContent = {
 // fabricados. Se a clínica confirmar métricas reais (anos de atuação,
 // nº de pacientes, avaliação média), trocar por AuthorityStat numérico.
 export const authorityBadges: AuthorityBadge[] = [
-  { icon: "GraduationCap", label: "Profissionais especializados" },
+  { icon: "GraduationCap", label: "Equipe especializada" },
   { icon: "Layers", label: "Odontologia + Medicina Estética" },
-  { icon: "HeartHandshake", label: "Atendimento personalizado" },
+  { icon: "HeartHandshake", label: "Um plano para cada paciente" },
   { icon: "MessageCircle", label: "Agendamento rápido via WhatsApp" },
 ];
 
 export const about: AboutContent = {
   eyebrow: "A Clínica",
-  title: "Odontologia e estética, sob um mesmo olhar de cuidado",
+  title: "Odontologia e estética andam juntas na Vittace",
   paragraphs: [
-    "A Vittace nasceu de uma constatação simples: o sorriso e a pele contam a mesma história — a de como alguém se sente ao se olhar no espelho. Por isso reunimos, em um único endereço, a odontologia e a medicina estética, planejadas em conjunto para cada paciente.",
-    "Cada atendimento começa antes da cadeira: entendemos sua rotina, suas referências estéticas e o que te incomoda hoje, para desenhar um plano de tratamento que faz sentido para você — não um protocolo padrão.",
+    "Para a Vittace, o sorriso e a pele contam a mesma história: a de como alguém se sente ao se olhar no espelho. Por isso reunimos, em um único endereço, a odontologia e a medicina estética, planejadas em conjunto para cada paciente.",
+    "Cada atendimento começa antes da cadeira: entendemos sua rotina, suas referências estéticas e o que te incomoda hoje, para desenhar um plano de tratamento que faz sentido para você, não um protocolo padrão.",
     "O espaço foi pensado para reduzir o desconforto típico do consultório: ambientes privados, consultas sem pressa e uma equipe que acompanha cada etapa do resultado.",
   ],
   highlights: [
@@ -101,7 +101,7 @@ export const services: Service[] = [
     slug: "estetica-dental",
     title: "Estética Dental",
     description:
-      "Lentes, facetas e clareamento planejados a partir do seu rosto — não de um sorriso padronizado.",
+      "Lentes, facetas e clareamento planejados a partir do seu rosto, não de um sorriso padronizado.",
     icon: "Smile",
     pillar: "odontologia",
     featured: true,
@@ -138,7 +138,7 @@ export const differentials: Differential[] = [
   {
     title: "Profissionais Especializados",
     description:
-      "Time multidisciplinar que conversa entre si — odontologia e estética planejadas em conjunto, não em consultórios separados.",
+      "Time multidisciplinar que conversa entre si: odontologia e estética planejadas em conjunto, não em consultórios separados.",
     icon: "GraduationCap",
   },
   {
@@ -148,9 +148,9 @@ export const differentials: Differential[] = [
     icon: "Cpu",
   },
   {
-    title: "Atendimento Personalizado",
+    title: "Atendimento Próximo",
     description:
-      "Nenhum plano de tratamento é copiado do anterior — cada rosto e cada sorriso pedem uma leitura própria.",
+      "Nenhum plano de tratamento é copiado do anterior. Cada rosto e cada sorriso pedem uma leitura própria.",
     icon: "HeartHandshake",
   },
   {
@@ -234,7 +234,29 @@ export const finalCta: CtaSectionContent = {
   eyebrow: "Vamos conversar?",
   title: "Agende sua avaliação e descubra o melhor tratamento para você.",
   description:
-    "Fale agora com nossa equipe pelo WhatsApp e receba orientação personalizada.",
+    "Fale agora com nossa equipe pelo WhatsApp e tire todas as suas dúvidas.",
   ctaLabel: "Chamar no WhatsApp",
   image: "/images/clinica/consultorio.png",
 };
+
+export const sectionHeadings = {
+  services: {
+    eyebrow: "Tratamentos",
+    title: "Ciência, estética e naturalidade em cada plano",
+    description:
+      "Tratamentos que unem odontologia e medicina estética, dos ajustes pontuais aos planos mais completos.",
+  },
+  differentials: {
+    eyebrow: "Por que a Vittace",
+    title: "Mais do que resultado, confiança em cada etapa",
+  },
+  testimonials: {
+    eyebrow: "Depoimentos",
+    title: "Quem já passou pela Vittace",
+  },
+  gallery: {
+    title: "Nossa equipe, nosso espaço",
+    description:
+      "Conheça as profissionais responsáveis pelo seu atendimento e o ambiente real da Vittace.",
+  },
+} as const;

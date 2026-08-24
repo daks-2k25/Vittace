@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
-import { testimonials } from "@/lib/site-config";
+import { sectionHeadings, testimonials } from "@/lib/site-config";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 
@@ -11,8 +11,8 @@ export function Testimonials() {
     <section id="depoimentos" className="bg-vittace-sand/40 py-24 md:py-32">
       <Container className="flex flex-col gap-16">
         <SectionHeading
-          eyebrow="Depoimentos"
-          title="Quem já passou pela Vittace"
+          eyebrow={sectionHeadings.testimonials.eyebrow}
+          title={sectionHeadings.testimonials.title}
         />
 
         <div className="grid gap-6 lg:grid-cols-3">

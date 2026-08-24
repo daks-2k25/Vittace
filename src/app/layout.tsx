@@ -41,7 +41,7 @@ const jsonLd = {
 export const metadata: Metadata = {
   title: "Vittace | Odontologia e Medicina Estética",
   description:
-    "Clínica Vittace — odontologia e medicina estética de alto padrão. Cuidado, sofisticação e resultados em cada tratamento. Agende sua avaliação.",
+    "Clínica Vittace, em Curitiba: odontologia e medicina estética em um só endereço, com atendimento próximo do início ao fim. Agende sua avaliação.",
   keywords: [
     "clínica odontológica",
     "medicina estética",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Vittace | Odontologia e Medicina Estética",
     description:
-      "Cuidado, sofisticação e resultados em cada tratamento. Agende sua avaliação na Clínica Vittace.",
+      "Odontologia e medicina estética em um só endereço, com atendimento próximo do início ao fim. Agende sua avaliação na Clínica Vittace.",
     locale: "pt_BR",
     type: "website",
   },

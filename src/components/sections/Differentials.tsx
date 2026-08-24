@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { differentials, differentialsImage } from "@/lib/site-config";
+import { differentials, differentialsImage, sectionHeadings } from "@/lib/site-config";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
@@ -13,8 +13,8 @@ export function Differentials() {
       <Container className="grid gap-14 md:grid-cols-2 md:gap-20">
         <div className="flex flex-col gap-12">
           <SectionHeading
-            eyebrow="Por que a Vittace"
-            title="Mais do que resultado, confiança em cada etapa"
+            eyebrow={sectionHeadings.differentials.eyebrow}
+            title={sectionHeadings.differentials.title}
             align="left"
             light
           />

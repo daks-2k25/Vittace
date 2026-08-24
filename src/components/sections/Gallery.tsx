@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { gallery } from "@/lib/site-config";
+import { gallery, sectionHeadings } from "@/lib/site-config";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
@@ -11,8 +11,8 @@ export function Gallery() {
     <section id="resultados" className="bg-vittace-cream py-24 md:py-32">
       <Container className="flex flex-col gap-16">
         <SectionHeading
-          title="Nossa equipe, nosso espaço"
-          description="Conheça as profissionais responsáveis pelo seu atendimento e o ambiente real da Vittace."
+          title={sectionHeadings.gallery.title}
+          description={sectionHeadings.gallery.description}
         />
 
         <div className="grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-4">
