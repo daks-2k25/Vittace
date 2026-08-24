@@ -59,7 +59,6 @@ export const navLinks: NavLink[] = [
 ];
 
 export const hero: HeroContent = {
-  eyebrow: "Vittace — Odontologia e Medicina Estética",
   headline: "Seu sorriso e sua beleza, na melhor versão de você.",
   subheadline:
     "Odontologia e medicina estética reunidas em um só endereço, com um plano pensado para cada rosto e cada sorriso.",
