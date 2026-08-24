@@ -22,9 +22,9 @@ export const siteConfig = {
   description:
     "Odontologia e medicina estética reunidas em um só endereço, com planejamento personalizado para cada rosto e cada sorriso.",
 
-  // TODO: confirmar telefone/WhatsApp oficial
-  phone: "+55 (00) 00000-0000",
-  whatsapp: "5500000000000",
+  // TODO: confirmar telefone oficial
+  phone: "+55 (41) 99266-6010",
+  whatsapp: "5541992666010",
   whatsappMessage: "Olá! Gostaria de agendar uma avaliação na Vittace.",
   email: "contato@vittace.com.br",
 
@@ -41,9 +41,11 @@ export const siteConfig = {
   ] satisfies BusinessHours[],
 
   social: [
-    // TODO: confirmar link oficial do Facebook
-    { label: "Instagram", href: "https://www.instagram.com/clinicavittace/", icon: "instagram" },
-    { label: "Facebook", href: "#", icon: "facebook" },
+    {
+      label: "Instagram",
+      href: "https://www.instagram.com/clinicavittace/",
+      icon: "instagram",
+    },
   ] satisfies SocialLink[],
 } as const;
 
@@ -160,7 +162,8 @@ export const differentials: Differential[] = [
 ];
 
 // Imagem de apoio da seção Diferenciais (sala de atendimento odontológico)
-export const differentialsImage = "/images/clinica/sala-odontologia-tecnologia.png";
+export const differentialsImage =
+  "/images/clinica/sala-odontologia-tecnologia.png";
 
 // TODO: substituir por depoimentos reais de pacientes (nome/foto com autorização)
 export const testimonials: Testimonial[] = [

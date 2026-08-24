@@ -30,9 +30,7 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-t from-vittace-charcoal/85 via-vittace-charcoal/35 to-vittace-charcoal/10" />
       </div>
 
-      <div className="pointer-events-none absolute inset-3 md:inset-6 border border-vittace-cream/30" />
-
-      <Container className="relative z-10 flex h-full flex-col items-center justify-end pb-24 md:pb-28 text-center">
+      <Container className="relative z-10 flex h-full flex-col items-start justify-center pb-16 text-left md:pb-24">
         <motion.span
           initial="hidden"
           animate="show"
@@ -48,7 +46,7 @@ export function Hero() {
           animate="show"
           custom={0.15}
           variants={fadeUp}
-          className="mt-5 max-w-4xl font-display text-5xl leading-[1.05] text-vittace-cream md:text-7xl"
+          className="mt-5 max-w-2xl font-display text-5xl leading-[1.05] text-vittace-cream md:text-7xl"
         >
           {hero.headline}
         </motion.h1>
@@ -68,16 +66,13 @@ export function Hero() {
           animate="show"
           custom={0.45}
           variants={fadeUp}
-          className="mt-9 flex flex-col items-center gap-3"
+          className="mt-9 flex flex-col items-start gap-3"
         >
           <WhatsAppButton
             label={hero.ctaLabel}
             message="Olá! Vim pelo site e gostaria de agendar uma avaliação."
             className="px-9 py-4 text-base"
           />
-          <span className="font-sans text-xs text-vittace-cream/60">
-            {hero.microcopy}
-          </span>
         </motion.div>
       </Container>
     </section>

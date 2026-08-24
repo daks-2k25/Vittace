@@ -54,21 +54,26 @@ export function Header() {
     <header
       id="top"
       className={cn(
-        "fixed inset-x-0 top-0 z-50 transition-all duration-300",
+        "fixed inset-x-0 top-0 z-50 transition-colors duration-300",
         scrolled
           ? "bg-vittace-cream/90 backdrop-blur-md shadow-[0_1px_0_0_rgba(138,107,71,0.15)]"
           : "bg-transparent"
       )}
     >
       <Container className="flex items-center justify-between py-4">
-        <Logo />
+        <Logo variant={scrolled ? "brown" : "cream"} />
 
         <nav className="hidden md:flex items-center gap-9">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="rounded-sm font-sans text-sm tracking-wide text-vittace-ink/80 transition-colors hover:text-vittace-brown focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-vittace-brown-dark focus-visible:ring-offset-2 focus-visible:ring-offset-vittace-cream"
+              className={cn(
+                "rounded-sm font-sans text-sm tracking-wide transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-vittace-brown-dark focus-visible:ring-offset-2",
+                scrolled
+                  ? "text-vittace-ink/80 hover:text-vittace-brown focus-visible:ring-offset-vittace-cream"
+                  : "text-vittace-cream/90 hover:text-vittace-cream focus-visible:ring-offset-vittace-charcoal"
+              )}
             >
               {link.label}
             </a>
@@ -83,7 +88,10 @@ export function Header() {
           type="button"
           aria-label={menuOpen ? "Fechar menu" : "Abrir menu"}
           aria-expanded={menuOpen}
-          className="rounded-sm text-vittace-brown-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-vittace-brown-dark focus-visible:ring-offset-2 focus-visible:ring-offset-vittace-cream md:hidden"
+          className={cn(
+            "rounded-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-vittace-brown-dark focus-visible:ring-offset-2 md:hidden",
+            scrolled ? "text-vittace-brown-dark focus-visible:ring-offset-vittace-cream" : "text-vittace-cream focus-visible:ring-offset-vittace-charcoal"
+          )}
           onClick={() => setMenuOpen((v) => !v)}
         >
           {menuOpen ? <X className="h-7 w-7" /> : <Menu className="h-7 w-7" />}

@@ -1,5 +1,6 @@
 import { MapPin, Phone, Clock } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
+import { getWhatsAppLink } from "@/lib/utils";
 import { Container } from "@/components/ui/Container";
 import { Logo } from "@/components/layout/Logo";
 import { DynamicIcon } from "@/components/ui/icon-map";
@@ -70,6 +71,15 @@ export function Footer() {
                 <DynamicIcon name={social.icon} className="h-4 w-4" />
               </a>
             ))}
+            <a
+              href={getWhatsAppLink()}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-vittace-sand/25 text-vittace-cream/85 transition-colors hover:border-vittace-accent hover:text-vittace-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-vittace-accent focus-visible:ring-offset-2 focus-visible:ring-offset-vittace-brown-dark"
+            >
+              <DynamicIcon name="whatsapp" className="h-4 w-4" />
+            </a>
           </div>
         </div>
       </Container>
