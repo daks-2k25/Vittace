@@ -30,8 +30,8 @@ export const siteConfig = {
 
   // TODO: confirmar endereço completo
   address: {
-    street: "Endereço a confirmar",
-    city: "Cidade — UF",
+    street: "R. Gen. Daltro Filho, 207",
+    city: "Curitiba — PR",
     zip: "",
   },
 
