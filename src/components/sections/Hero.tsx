@@ -26,6 +26,7 @@ export function Hero() {
           priority
           sizes="100vw"
           labelPosition="top"
+          className="object-[50%_15%]"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-vittace-charcoal/85 via-vittace-charcoal/35 to-vittace-charcoal/10" />
       </div>

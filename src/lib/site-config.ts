@@ -65,7 +65,7 @@ export const hero: HeroContent = {
     "Odontologia e medicina estética reunidas em um só endereço, com um plano pensado para cada rosto e cada sorriso.",
   ctaLabel: "Agendar pelo WhatsApp",
   microcopy: "Resposta rápida, sem compromisso.",
-  image: "/images/hero/fachada-vittace.png",
+  image: "/images/hero/fachada-vittace-dia.png",
 };
 
 // Faixa de autoridade — badges qualitativos e defensáveis, sem números
