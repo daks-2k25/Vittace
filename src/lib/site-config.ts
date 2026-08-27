@@ -9,6 +9,7 @@ import type {
   NavLink,
   Service,
   SocialLink,
+  TeamMember,
   Testimonial,
 } from "@/types/site";
 
@@ -25,7 +26,7 @@ export const siteConfig = {
   // TODO: confirmar telefone oficial
   phone: "+55 (41) 99266-6010",
   whatsapp: "5541992666010",
-  whatsappMessage: "Olá! Gostaria de agendar uma avaliação na Vittace.",
+  whatsappMessage: "Vim pelo site e gostaria de agendar uma avaliação.",
   email: "contato@vittace.com.br",
 
   // TODO: confirmar endereço completo
@@ -161,49 +162,8 @@ export const differentials: Differential[] = [
   },
 ];
 
-// Imagem de apoio da seção Diferenciais (sala de atendimento odontológico)
-export const differentialsImage =
-  "/images/clinica/sala-odontologia-tecnologia.png";
-
-// TODO: substituir por depoimentos reais de pacientes (nome/foto com autorização)
-export const testimonials: Testimonial[] = [
-  {
-    name: "Paciente Vittace — Estética Dental",
-    quote:
-      "Fui buscando resolver o clareamento e saí com um plano que também considerou o formato do meu rosto. Não esperava esse nível de atenção ao detalhe.",
-    rating: 5,
-  },
-  {
-    name: "Paciente Vittace — Harmonização Facial",
-    quote:
-      "O que mais me marcou foi não ter saído com uma cara 'diferente' — só uma versão mais descansada de mim mesma.",
-    rating: 5,
-  },
-  {
-    name: "Paciente Vittace — Implantodontia",
-    quote:
-      "Expliquei minha rotina corrida e o plano de tratamento foi ajustado a ela, não o contrário.",
-    rating: 5,
-  },
-];
-
-// Ainda não recebemos fotos de resultados/antes-e-depois — por isso a
-// galeria traz apenas o que temos confirmado: a equipe e o ambiente real
-// da clínica. Adicionar categoria "Resultado"/"Antes e depois" apenas
-// quando essas imagens forem enviadas.
-export const gallery: GalleryItem[] = [
-  {
-    label: "Neiva — Odontologia",
-    alt: "Neiva, responsável pela área de odontologia da Vittace",
-    category: "Equipe",
-    src: "/images/equipe/neiva.png",
-  },
-  {
-    label: "Maria — Estética Facial",
-    alt: "Maria, responsável pela área de estética da Vittace",
-    category: "Equipe",
-    src: "/images/equipe/maria.png",
-  },
+// Carrossel de apoio da seção Diferenciais (ambiente da clínica)
+export const differentialsGallery: GalleryItem[] = [
   {
     label: "Sala de Odontologia",
     alt: "Sala de atendimento odontológico da Vittace",
@@ -227,6 +187,68 @@ export const gallery: GalleryItem[] = [
     alt: "Área de espera e lounge da clínica Vittace",
     category: "Ambiente",
     src: "/images/galeria/lounge.png",
+  },
+];
+
+// TODO: substituir por depoimentos reais de pacientes (nome/foto com autorização)
+export const testimonials: Testimonial[] = [
+  {
+    name: "Paciente Vittace — Estética Dental",
+    quote:
+      "Fui buscando resolver o clareamento e saí com um plano que também considerou o formato do meu rosto. Não esperava esse nível de atenção ao detalhe.",
+    rating: 5,
+  },
+  {
+    name: "Paciente Vittace — Harmonização Facial",
+    quote:
+      "O que mais me marcou foi não ter saído com uma cara 'diferente' só uma versão mais descansada de mim mesma.",
+    rating: 5,
+  },
+  {
+    name: "Paciente Vittace — Implantodontia",
+    quote:
+      "Expliquei minha rotina corrida e o plano de tratamento foi ajustado a ela, não o contrário.",
+    rating: 5,
+  },
+];
+
+// Fotos de ambiente foram para o carrossel da seção Diferenciais
+// (ver `differentialsGallery`). Aqui fica só a equipe até recebermos
+// fotos de resultados/antes-e-depois.
+export const gallery: GalleryItem[] = [
+  {
+    label: "Neiva — Odontologia",
+    alt: "Neiva, responsável pela área de odontologia da Vittace",
+    category: "Equipe",
+    src: "/images/equipe/neiva1.png",
+  },
+  {
+    label: "Mariana — Estética Facial",
+    alt: "Mariana, responsável pela área de estética da Vittace",
+    category: "Equipe",
+    src: "/images/equipe/maria.png",
+  },
+];
+
+// Dados da equipe para os cards/painel da seção "Nossa Equipe".
+// `specialty`/`bio` vieram do Instagram oficial de cada profissional
+// (@dra.neivaiaglarenauer e @dra_marianalima), confirmados com a clínica.
+export const team: TeamMember[] = [
+  {
+    name: "Neiva",
+    role: "Odontologia",
+    photo: "/images/equipe/neiva1.png",
+    alt: "Neiva, responsável pela área de odontologia da Vittace",
+    specialty: "Mestre em Implantes Dentários e Próteses",
+    bio: "Atua também com facetas de porcelana e resina e harmonização orofacial, unindo técnica apurada e atenção a cada detalhe do sorriso.",
+  },
+  {
+    name: "Mariana",
+    role: "Estética Facial",
+    photo: "/images/equipe/maria.png",
+    alt: "Mariana, responsável pela área de estética da Vittace",
+    specialty: "Medicina Estética",
+    bio: "Defende uma beleza inteligente e com propósito, com protocolos exclusivos Vittace pensados para resultados naturais.",
   },
 ];
 
@@ -255,8 +277,7 @@ export const sectionHeadings = {
     title: "Quem já passou pela Vittace",
   },
   gallery: {
-    title: "Nossa equipe, nosso espaço",
-    description:
-      "Conheça as profissionais responsáveis pelo seu atendimento e o ambiente real da Vittace.",
+    title: "Nossa equipe",
+    description: "Conheça as profissionais responsáveis pelo seu atendimento na Vittace.",
   },
 } as const;

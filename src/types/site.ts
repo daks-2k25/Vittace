@@ -47,6 +47,15 @@ export interface GalleryItem {
   src?: string;
 }
 
+export interface TeamMember {
+  name: string;
+  role: string;
+  photo: string;
+  alt: string;
+  specialty?: string;
+  bio?: string;
+}
+
 export interface AuthorityBadge {
   icon: string;
   label: string;

@@ -7,5 +7,5 @@ export function cn(...inputs: ClassValue[]) {
 
 export function getWhatsAppLink(message?: string) {
   const text = message ?? siteConfig.whatsappMessage;
-  return `https://wa.me/${siteConfig.whatsapp}?text=${encodeURIComponent(text)}`;
+  return `https://wa.me/${siteConfig.whatsapp}?text=${text.replace(/ /g, "%20")}`;
 }

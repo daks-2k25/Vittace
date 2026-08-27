@@ -1,10 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { differentials, differentialsImage, sectionHeadings } from "@/lib/site-config";
+import { differentials, differentialsGallery, sectionHeadings } from "@/lib/site-config";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
+import { Carousel } from "@/components/ui/Carousel";
 import { DynamicIcon } from "@/components/ui/icon-map";
 
 export function Differentials() {
@@ -50,13 +51,20 @@ export function Differentials() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
-          className="relative min-h-[320px] w-full md:min-h-full"
+          className="relative flex min-h-[420px] w-full md:h-full"
         >
-          <ImagePlaceholder
-            src={differentialsImage}
-            alt="Sala de atendimento odontológico da Vittace, com equipamentos modernos"
-            label="Foto: tecnologia / ambiente de atendimento"
-            sizes="(min-width: 768px) 50vw, 100vw"
+          <Carousel
+            items={differentialsGallery}
+            getKey={(item) => item.label}
+            className="flex h-full w-full flex-col"
+            frameClassName="min-h-[420px] flex-1"
+            renderItem={(item) => (
+              <ImagePlaceholder
+                src={item.src}
+                alt={item.alt}
+                sizes="(min-width: 768px) 50vw, 100vw"
+              />
+            )}
           />
         </motion.div>
       </Container>

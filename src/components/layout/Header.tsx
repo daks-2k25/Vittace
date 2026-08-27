@@ -81,7 +81,7 @@ export function Header() {
         </nav>
 
         <div className="hidden md:block">
-          <WhatsAppButton label="Agendar" message="Olá! Gostaria de agendar uma avaliação na Vittace." />
+          <WhatsAppButton label="Agendar" message="Vim pelo site e gostaria de agendar uma avaliação." />
         </div>
 
         <button
@@ -128,7 +128,7 @@ export function Header() {
               >
                 <WhatsAppButton
                   label="Agendar pelo WhatsApp"
-                  message="Olá! Gostaria de agendar uma avaliação na Vittace."
+                  message="Vim pelo site e gostaria de agendar uma avaliação."
                   className="mt-2 w-full"
                 />
               </motion.div>

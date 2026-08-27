@@ -71,7 +71,7 @@ export function Hero() {
         >
           <WhatsAppButton
             label={hero.ctaLabel}
-            message="Olá! Vim pelo site e gostaria de agendar uma avaliação."
+            message="Vim pelo site e gostaria de agendar uma avaliação."
             className="px-9 py-4 text-base"
           />
         </motion.div>

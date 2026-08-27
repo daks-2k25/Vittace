@@ -62,7 +62,7 @@ export function FinalCta() {
         >
           <WhatsAppButton
             label={finalCta.ctaLabel}
-            message="Olá! Vim pelo site e gostaria de agendar minha avaliação na Vittace."
+            message="Vim pelo site e gostaria de agendar uma avaliação."
             className="px-10 py-4 text-base"
           />
         </motion.div>
