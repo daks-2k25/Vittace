@@ -235,20 +235,20 @@ export const gallery: GalleryItem[] = [
 // (@dra.neivaiaglarenauer e @dra_marianalima), confirmados com a clínica.
 export const team: TeamMember[] = [
   {
-    name: "Neiva",
-    role: "Odontologia",
+    name: "Dra. Neiva Jagla Hinawer",
+    role: "Cirurgiã-Dentista",
     photo: "/images/equipe/neiva1.png",
     alt: "Neiva, responsável pela área de odontologia da Vittace",
-    specialty: "Mestre em Implantes Dentários e Próteses",
-    bio: "Atua também com facetas de porcelana e resina e harmonização orofacial, unindo técnica apurada e atenção a cada detalhe do sorriso.",
+    specialty: "Mestre e Especialista em Implantes Dentários",
+    bio: "Mestre e Especialista em Implantes Dentários, com experiência em próteses sobre implantes, facetas e cirurgias estéticas. Natural de Pitanga (PR), consolidou sua formação em São Paulo antes de escolher Curitiba como lar e sede de seu trabalho. Ao lado da Dra. Mariana Lima, idealizou e fundou a Clínica Vittace, unindo Odontologia e Medicina Estética Avançada em um espaço pensado para oferecer tecnologia, sofisticação e atendimento próximo. Para a Dra. Neiva, excelência profissional também nasce das experiências que formam quem somos. Como mãe, esposa e mulher, acredita que a sensibilidade e a dedicação fazem parte essencial da forma de cuidar de cada paciente.",
   },
   {
-    name: "Mariana",
+    name: "Dra. Mariana",
     role: "Estética Facial",
     photo: "/images/equipe/maria.png",
     alt: "Mariana, responsável pela área de estética da Vittace",
-    specialty: "Medicina Estética",
-    bio: "Defende uma beleza inteligente e com propósito, com protocolos exclusivos Vittace pensados para resultados naturais.",
+    specialty: "Dermatologia e Cosmiatria",
+    bio: "Sempre envolvida com o cuidado e o bem-estar, transformou sua afinidade natural pela beleza em ciência com seus 7 anos de experiência em estética avançada. Para ela, a dermatologia vai muito além dos procedimentos: é uma ferramenta poderosa para devolver a autoconfiança. Nesta nova etapa na Clínica Vittace, atuando de forma integrada com a Dra. Neiva, ela aplica técnicas de harmonização e cosmiatria para realçar o que cada paciente tem de melhor, impactando positivamente como ele se apresenta para o mundo.",
   },
 ];
 
@@ -278,6 +278,7 @@ export const sectionHeadings = {
   },
   gallery: {
     title: "Nossa equipe",
-    description: "Conheça as profissionais responsáveis pelo seu atendimento na Vittace.",
+    description:
+      "Conheça as profissionais responsáveis pelo seu atendimento na Vittace.",
   },
 } as const;
