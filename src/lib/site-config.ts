@@ -235,12 +235,12 @@ export const gallery: GalleryItem[] = [
 // (@dra.neivaiaglarenauer e @dra_marianalima), confirmados com a clínica.
 export const team: TeamMember[] = [
   {
-    name: "Dra. Neiva Jagla Hinawer",
+    name: "Dra. Neiva Iagla Renauar",
     role: "Cirurgiã-Dentista",
     photo: "/images/equipe/neiva1.png",
     alt: "Neiva, responsável pela área de odontologia da Vittace",
     specialty: "Mestre e Especialista em Implantes Dentários",
-    bio: "Mestre e Especialista em Implantes Dentários, com experiência em próteses sobre implantes, facetas e cirurgias estéticas. Natural de Pitanga (PR), consolidou sua formação em São Paulo antes de escolher Curitiba como lar e sede de seu trabalho. Ao lado da Dra. Mariana Lima, idealizou e fundou a Clínica Vittace, unindo Odontologia e Medicina Estética Avançada em um espaço pensado para oferecer tecnologia, sofisticação e atendimento próximo. Para a Dra. Neiva, excelência profissional também nasce das experiências que formam quem somos. Como mãe, esposa e mulher, acredita que a sensibilidade e a dedicação fazem parte essencial da forma de cuidar de cada paciente.",
+    bio: "Mestra e especialista em implantes dentários e próteses sob implantes, facetas e cirurgias estéticas, a Dra. Neiva Iagla Renauar construiu sua trajetória unindo excelência técnica e uma relação próxima com seus pacientes. Nascida em Pitanga, no Paraná, buscou sua especialização em São Paulo e escolheu Curitiba como cidade para viver e exercer sua profissão. Mais do que uma cirurgiã-dentista, Dra. Neiva acredita na confiança como parte essencial de cada cuidado. É essa combinação entre experiência, conhecimento e proximidade que traduz a forma como conduz sua prática: com atenção aos detalhes e respeito à individualidade de cada paciente.",
   },
   {
     name: "Dra. Mariana",
